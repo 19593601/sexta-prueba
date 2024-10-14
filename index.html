@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--Metadatos-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Emerson Automation Solutions">
+  <meta name="description" content="Saturated steam calculator">
+  <meta name="keywords" content="Calculator, Water Properties, Steam">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Title-->
+  <title>Emerson | Water Properties Calculators</title>
+
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="images/Isologo.png">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+  <!--CSS-->
+   <link href="style.css" rel="stylesheet">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  
+  <style class="navbar">
+    /*Navbar*/
+.container-fluid {
+    padding: 1rem;
+    padding-left: 1.5rem;
+    background-color: #ffffff;
+    
+}
+
+@media screen and (min-width:1023px) {
+    .logo {
+        display: block;
+    }
+    .Isologo_Emerson {
+        display: none;
+    }
+}
+@media screen and (max-width:1023px) {
+    .logo {
+        display: none;
+    }
+    .Isologo_Emerson {
+        display: block;
+    }
+}
+
+.logo {
+    max-width: 10rem;
+}
+
+.Isologo_Emerson {
+    max-width: 4rem;
+}
+
+.logo-menu {
+    max-width: 8rem;
+}
+
+    </style>
+  
+
+
+<style class="footer">
+  .footer {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto auto auto auto auto;
+margin-top: 4rem;
+background-color: #EAEDF2;
+height: auto;
+padding: 2rem;
+grid-gap: 1rem;
+} 
+  
+.logo-footer {
+max-width: 10rem;
+
+}
+
+.brand-footer {
+grid-column: 2 / 3;
+grid-row: 2/ 3;
+}
+
+.social-networks {
+grid-column: 11 / 12;
+grid-row: 3/ 4;
+}
+
+.bar-socialnetwork {
+display: flex;
+gap: 1.1rem;
+list-style-type: none;
+}
+
+svg {
+width: 30px;
+height: 30px;
+color: #536779;
+
+}
+
+
+.copyright {
+grid-column: 1 / -1;
+grid-row: 4/ 5;
+padding-top: 1.5rem;
+
+}
+
+.rights {
+justify-self: center;
+align-items: center;
+text-align: center;
+color: #536779;
+font-family: "Mukta", sans-serif;
+font-weight: 300;
+font-size: 1rem;
+font-style: normal;
+
+}
+
+@media screen and (max-width:768px) {
+.social-networks {
+grid-column: 1 / 4;
+padding-top: 0.7rem;
+}
+
+.logo-footer {
+  max-width: 9rem;
+
+}
+
+svg {
+  width: 27px;
+  height: 27px;
+}
+}
+
+
+</style>
+ 
+</head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.emerson.com/en-us/automation/home">
+        <img class="logo" src="/TEMPLATES/Images/Logo_Emerson.svg" alt="Logo_Emerson">
+        <img class="Isologo_Emerson" src="/TEMPLATES/Images/Isologo_Emerson.svg" alt="Isologo">
+      </a>
+    </div>
+  </nav>
+
+  <!--Title-->
+  <h1>Select a calculator</h1>
+
+  <!--Cards-->
+  <div class="main-grid">
+
+  <div class="cards ssp">
+    <h3>Saturated Steam Pressure</h3>
+    <p>Determine steam pressure at saturation conditions.</p>
+    <a class="btn-custom btn" href="/TEMPLATES/saturated_steam_pressure.html" tabindex="-1" role="button" aria-disabled="true">Go</a>  
+  </div>
+
+  <div class="cards sst">
+    <h3>Saturated Steam Temperature</h3>
+    <p>Find steam temperature at saturation points.</p>
+    <a class="btn-custom btn" href="/TEMPLATES/saturated_steam_pressure.html" tabindex="-1" role="button" aria-disabled="true">Go</a>  
+
+  </div>
+
+  <div class="cards ss">
+    <h3>Superheated Steam</h3>
+    <p>Explore steam properties in superheated conditions.</p>
+    <a class="btn-custom btn" href="/TEMPLATES/saturated_steam_pressure.html" tabindex="-1" role="button" aria-disabled="true">Go</a>  
+
+  </div>
+
+  </div>
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
